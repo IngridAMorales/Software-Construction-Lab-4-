@@ -3,7 +3,7 @@
 #include "gtest/gtest.h"
 
 TEST(TestPosArea, Rectangle) {
-    Rectangle rect1(3,4);
+   Rectangle rect1(3,4);
    int result = rect1.area();
    EXPECT_EQ(12, result);
 }
