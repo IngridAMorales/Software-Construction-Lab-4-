@@ -15,4 +15,4 @@ class Rectangle {
         int perimeter();
 };
 
-#endif // RECTANGLE_HPP
+#endif /* RECTANGLE_HPP */
