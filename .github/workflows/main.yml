@@ -36,7 +36,5 @@ jobs:
           echo test, and deploy your project.
       # Runs the tests of rectangle.cpp
       - name: Run gtest
-        run: |
-          cmake3 .
-          make 
+        run: | 
           ./test
