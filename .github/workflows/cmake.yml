@@ -24,4 +24,7 @@ jobs:
         - uses: actions/checkout@v2 
 
         - name: Run a one-line script
-          run: cmake .      
+          run: |
+             cmake .
+             make 
+             ./test      
