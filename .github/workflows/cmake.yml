@@ -5,7 +5,7 @@ name: CMake
 on: 
    
    push: 
-     branches: [ main, imora033/failing_tests ] 
+     branches: [ main, imora033/failing_tests, nwarn003/passing_tests ] 
    pull_request: 
      branches: [ main ] 
 
@@ -23,7 +23,7 @@ jobs:
         
         - uses: actions/checkout@v2 
 
-        - name: Run a one-line script
+        - name: Running tests
           run: |
              cmake .
              make 
