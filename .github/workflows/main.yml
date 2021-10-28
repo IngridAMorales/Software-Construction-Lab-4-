@@ -41,4 +41,7 @@ on:
       - name: Run gtest
         run: | 
           ./test
+<<<<<<< HEAD
+>>>>>>> parent of 7c1244a... running main.yml
+=======
 >>>>>>> parent of 7c1244a... running main.yml
