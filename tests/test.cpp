@@ -2,11 +2,6 @@
 
 #include "gtest/gtest.h"
 
-TEST(PosNumbers, Constructor){
-   Rectangle rect(1,2); 
-   EXPECT_EQ(rect, rect(1,2));
-}
-
 TEST(TestPosArea, Rectangle) {
    Rectangle rect1(3,4);
    EXPECT_EQ(12, rect1.area());
@@ -25,7 +20,7 @@ TEST(TestPosPerimeter, Rectangle) {
 }
 TEST(TestNegPerimeter, Rectangle) {
    Rectangle rect1(-3,-4);
-   EXPECT_EQ(-14, rect1.perimeter());
+   EXPECT_EQ(14, rect1.perimeter());
 }
 TEST(TestZeroPerimeter, Rectangle) {
    Rectangle rect1(0,0);
@@ -38,6 +33,14 @@ TEST(TestWidthConstructor, Rectangle) {
 TEST(TestHeightConstructor, Rectangle) {
    Rectangle rect1(3,4);
    EXPECT_EQ(4, rect1.get_height());
+}
+TEST(TestNegativeWidth, Constructor) {
+   Rectangle rect(-3, 0); 
+   EXPECT_EQ(3, rect.get_width()); 
+}
+TEST(TestNegativeHeight, Constructor) {
+   Rectangle rect(0,-4); 
+   EXPECT_EQ(4, rect.get_height());
 }
 
 int main(int argc, char **argv) {
