@@ -3,7 +3,7 @@ name: CI
 
 on:
   push:
-    branches: [ main, imora033/failing_tests ]
+    branches: [ main, nwarn/ci_setup, nwarn003/passing_tests, imora033/failing_tests ]
   pull_request:
     branches: [ main ]
 
@@ -30,3 +30,15 @@ on:
             echo Add other actions to build,
             echo test, and deploy your project.
 
+<<<<<<< HEAD
+=======
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+      # Runs the tests of rectangle.cpp
+      - name: Run gtest
+        run: | 
+          ./test
+>>>>>>> parent of 7c1244a... running main.yml
